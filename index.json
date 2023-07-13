@@ -1,0 +1,23 @@
+{
+    "run": [
+        {
+            "method": "shell.run",
+            "params": {
+                "message": "npm install -g flowise"
+            }
+        },
+        {
+            "method": "shell.run",
+            "params": {
+                "message": "npx flowise start"
+            }
+        },
+        {
+            "method": "browser.open",
+            "params": {
+                "uri": "http://localhost:3000",
+                "target": "_blank"
+            }
+        }
+    ]
+}
